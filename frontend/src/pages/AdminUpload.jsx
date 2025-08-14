@@ -27,7 +27,7 @@ export default function AdminUpload() {
     formData.append("file", file);
 
     try {
-      const res = await axios.post("http://localhost:5000/api/upload", formData, {
+      const res = await axios.post("https://microdata-ulei.onrender.com/api/upload", formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
       setStatus(` Upload successful: ${res.data.message}`);

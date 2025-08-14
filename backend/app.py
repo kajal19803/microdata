@@ -7,7 +7,7 @@ from routes.auth_routes import auth_blueprint
 import os
 
 app = Flask(__name__)
-CORS(app, origins=["http://localhost:3000"])
+CORS(app, origins=["https://microdata.vercel.app"])
 
 @app.route('/')
 def home():

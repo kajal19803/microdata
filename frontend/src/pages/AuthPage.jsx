@@ -24,8 +24,8 @@ export default function AuthPage() {
     e.preventDefault();
     try {
       const url = isLogin
-        ? "http://localhost:5000/api/login"
-        : "http://localhost:5000/api/register";
+        ? "https://microdata-ulei.onrender.com/api/login"
+        : "https://microdata-ulei.onrender.com/api/register";
 
       const payload = isLogin
         ? { email: formData.email, password: formData.password }
